@@ -99,7 +99,7 @@ $default-float: left;
 // Colors
 
 $primary-color: #5EC1CF;
-// $secondary-color: #e9e9e9;
+$secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
 
@@ -256,8 +256,8 @@ $primary-color: #5EC1CF;
 // Style lists
 
 // $list-style-position: outside;
-// $list-side-margin: 0;
-// $list-nested-margin: em-calc(20);
+$list-side-margin: em-calc(20);
+$list-nested-margin: em-calc(20);
 // $definition-list-header-weight: bold;
 // $definition-list-header-margin-bottom: .3em;
 // $definition-list-margin-bottom: em-calc(12);
@@ -1274,7 +1274,7 @@ $primary-color: #5EC1CF;
 
 // Background color for the top bar
 
-// $topbar-bg-color: #111;
+$topbar-bg-color: #5EC1CF;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
