@@ -7345,6 +7345,11 @@ a.th {
   display: inline-block;
 }
 
+/* line 13, ../scss/layout/_main.scss */
+.page-node .field-name-social img {
+  margin-right: 0.3125em;
+}
+
 /* line 4, ../scss/components/_grid.scss */
 [class*="column"] + [class*="column"]:last-child {
   float: left;

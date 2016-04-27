@@ -6,3 +6,12 @@
 .body {}
 .image {}
 .breadcrumb {}
+
+.page-node {
+  //Social field
+  .field-name-social {
+    img {
+      margin-right: em-calc(5);
+    }
+  }
+}
