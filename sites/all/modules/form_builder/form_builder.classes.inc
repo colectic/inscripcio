@@ -666,8 +666,17 @@ class FormBuilderFormBase implements Serializable {
 
   private function _recursiveElementIds(&$ids, $e) {
     foreach (element_children($e, TRUE) as $key) {
+   	  /*******************************************************
+       * TEBPATCH (MDF) @fcasanellas 27/05/2016
+       * PI-FB001 Evita errors amb $key buides
+       * OLDCODE *********************************************
       if (isset($e[$key]['#form_builder'])) {
-        $ids[] = $e[$key]['#form_builder']['element_id'];
+       *******************************************************
+       * NEWCODE ********************************************/
+      if ($key && isset($e[$key]['#form_builder'])) { 
+       /******************************************************
+        * END TEBPATCH **************************************/
+    	$ids[] = $e[$key]['#form_builder']['element_id'];
         $this->_recursiveElementIds($ids, $e[$key]);
       }
     }
